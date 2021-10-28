@@ -1,0 +1,74 @@
+.scroll-navbar{
+    position:sticky;
+    top:0;
+    left:0;
+    background:#232323;
+    width:100%;
+    z-index: 1;
+}
+    ul.scroll-nav{
+      margin:0;
+      padding:0;
+      list-style:none;
+      position:relative;
+      margin:0 auto;
+    }
+
+      .scroll-nav li{
+        display:table-cell;
+        /*padding: 0 30px;*/  /*Modify this padding if I have smaller item to display*/
+      }
+
+        .scroll-nav a{
+          padding:10px 20px;
+          display:block;
+          color:#9d9d9d;
+          text-size-adjust: 100%;
+          text-decoration:none;
+          transition:all 0.3s ease-in-out;
+        }
+
+        .scroll-nav .active a{
+              color:#F38A8A;
+              border-bottom:3px solid #F38A8A;
+           }
+
+           a.navbar-brand span {
+            font-family: 'Mr Bedfort', cursive;
+            font-weight: bold;
+            color: #fff;
+           }
+
+  section{
+    height: 100vh;
+    position:relative;
+    margin: 0;
+    padding: 0;  
+    display:block;
+    z-index: 0;
+    scroll-margin-top: 4em; /*Adjust according to desired spacing*/
+  }
+
+  .collapse .nav-link {
+    color: #fff;
+  }
+
+
+  /*
+  #home{
+  background:#A0CAB5;  
+  }
+  #work{
+  background:#CDE9CA;
+  }
+  #about{
+  background:#F1EDD0;
+  }
+  #contact{
+  background:#F38A8A;
+  }
+  h2{
+    padding: 0;
+    margin: 0;
+  }
+  */
