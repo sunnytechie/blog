@@ -3,19 +3,29 @@
 @section('content')
 
 <nav class="scroll-navbar">
+  <div class="container">
     <ul id="mainNav" class="scroll-nav">
-      <li class="active"><a href="#home">Home</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
+      {{-- <li class="active"><a href="#home">Home</a></li> --}}
+      <li><a href="#home">Home</a></li>
+      <li><a href="#work">News</a></li>
+      <li><a href="#about">Announcement</a></li>
       <li><a href="#contact">Contact</a></li>    
     </ul>
+  </div>
+    
 </nav>
   
-<div class="container-fluid">
-    <section class="mt-3" id="home"><h2>Home</h2></section>
-    <section id="work" data-sr><h2>Work</h2></section>
-    <section id="about"><h2>About</h2></section>
-    <section id="contact"><h2>Contact</h2></section>
+<div class="container">
+    
+
+    <div class="row mt-2">
+      <div class="col-md-8">
+        <section id="home"><h2>Home</h2></section>
+        <section id="work" data-sr><h2>News</h2></section>
+        <section id="about"><h2>Announcement</h2></section>
+        <section id="contact"><h2>Contact</h2></section>
+      </div>
+    </div>
 </div>
 
 
