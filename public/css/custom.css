@@ -44,6 +44,10 @@ body {
             color: #fff;
            }
 
+           .nav-brand-mobile {
+             font-family: 'Bebas Neue', cursive;
+           }
+
   .include-snippets section{
     min-height: 80vh;
     padding-bottom: 30px;
@@ -51,6 +55,10 @@ body {
   }  
 
   .collapse .nav-link {
+    color: #dadada;
+  }
+
+  .collapse .nav-link:hover {
     color: #fff;
   }
 
@@ -125,7 +133,6 @@ body {
 
   .my-card:hover {
     background-color: #262729;
-    cursor: pointer;
   }
 
   .icon-to-the-right span {
@@ -134,4 +141,138 @@ body {
 
   .btn-color {
     color: #fff;
+  }
+
+  .link-div {
+    cursor: pointer;
+  }
+
+  /* Live STreaming */
+  .lds-loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-loader div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-loader div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-loader div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-loader div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-loader {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+
+  /* End Live streaming loader */
+
+  /* Search ANimation */
+  .navbar-right-search {
+    max-width: 250px;
+  }
+
+  .searchbar {
+    position: relative;
+    min-width: 30px;
+    width: 0%;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s
+}
+
+.searchbar-input {
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: #1B1B1B;
+    width: 100%;
+    margin: 0;
+    padding: 4px 10px 4px 20px;
+    font-size: 16px;
+    color: #fff
+}
+
+.searchbar input[type=search]:focus{
+  background: #232323 !important;     /* oranges! yey */
+}
+
+.searchbar-input::-webkit-input-placeholder {
+    color: #fff
+}
+
+.searchbar-input:-moz-placeholder {
+    color: #fff
+}
+
+.searchbar-input::-moz-placeholder {
+    color: #fff
+}
+
+.searchbar-input:-ms-input-placeholder {
+    color: #fff
+}
+
+.searchbar-icon,
+.searchbar-submit {
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    right: 0;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 10px;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.searchbar-open{
+  width:100%;
+}
+
+
+  /* End Search Animation */
+
+  @media only screen and (min-width: 770px) {
+    .navbar2 {
+      display: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    .navbar1 {
+      display: none !important;
+    }
   }

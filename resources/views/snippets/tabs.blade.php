@@ -31,6 +31,10 @@
         </li> 
 
         <li class="nav-item" role="presentation">
+          <button class="nav-link" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible" type="button" role="tab" aria-controls="bible" aria-selected="false">Bible</button>
+        </li> 
+
+        <li class="nav-item" role="presentation">
           <button class="nav-link" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog" type="button" role="tab" aria-controls="blog" aria-selected="false">Blog</button>
         </li> 
       </ul>

@@ -11,10 +11,13 @@
   </div>
 
   <div class="card my-card mb-2" onclick="location.href='#';">
+    <div class="card-header">
+      Bible
+    </div>
     <div class="card-body d-flex justify-content-between">
-      <div class="thumbnail">
+      {{-- <div class="thumbnail">
         <img height="45" width="45" src="{{ asset('assets/imgs/icons-hero.png') }}" alt="">
-      </div>
+      </div> --}}
       <div class="blockqout">
         <blockquote class="blockquote mb-0">
         <p>A well-known quote, contained in a blockquote element.</p>
@@ -22,7 +25,7 @@
       </blockquote>
       </div>
       <div class="icon-to-the-right">
-        <span><i class="bi bi-sticky"></i></span>
+        <span><i class="bi bi-stickies"></i></span>
       </div>
     </div>
   </div>
