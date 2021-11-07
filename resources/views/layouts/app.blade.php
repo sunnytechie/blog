@@ -87,4 +87,47 @@
     }
    </script>
 
+   {{-- Script Mobile Search --}}
+   <script>
+       $(document).ready(function(){
+    var submitIconMobile = $('.searchbar-icon-2');
+    var inputBoxMobile = $('.searchbar-input-2');
+    var searchbarMobile = $('.searchbar-2');
+    var isOpen = false;
+    submitIconMobile.click(function(){
+    if(isOpen == false){
+    searchbarMobile.addClass('searchbar-open-2');
+    inputBoxMobile.focus();
+    isOpen = true;
+    } else {
+    searchbarMobile.removeClass('searchbar-open-2');
+    inputBoxMobile.focusout();
+    isOpen = false;
+    }
+    });
+    submitIconMobile.mouseup(function(){
+    return false;
+    });
+    searchbarMobile.mouseup(function(){
+    return false;
+    });
+    $(document).mouseup(function(){
+    if(isOpen == true){
+    $('.searchbar-icon-2').css('display','block');
+    submitIconMobile.click();
+    }
+    });
+    });
+    function buttonUp2(){
+    var inputVal = $('.searchbar-input-2').val();
+    inputVal = $.trim(inputVal).length;
+    if( inputVal !== 0){
+    $('.searchbar-icon-2').css('display','none');
+    } else {
+    $('.searchbar-input-2').val('');
+    $('.searchbar-icon-2').css('display','block');
+    }
+    }
+   </script>
+
 </html>

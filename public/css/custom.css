@@ -263,6 +263,78 @@ body {
 }
 
 
+
+
+/* Start Mobile Search */
+
+.searchbar-2 {
+  position: relative;
+  min-width: 30px;
+  width: 0%;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s
+}
+
+.searchbar-input-2 {
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  background: #1B1B1B;
+  width: 100%;
+  margin: 0;
+  padding: 4px 10px 4px 20px;
+  font-size: 16px;
+  color: #fff
+}
+
+.searchbar-2 input[type=search]:focus{
+background: #232323 !important;     /* oranges! yey */
+}
+
+.searchbar-input-2::-webkit-input-placeholder {
+  color: #fff
+}
+
+.searchbar-input-2:-moz-placeholder {
+  color: #fff
+}
+
+.searchbar-input-2::-moz-placeholder {
+  color: #fff
+}
+
+.searchbar-input-2:-ms-input-placeholder {
+  color: #fff
+}
+
+.searchbar-icon-2,
+.searchbar-submit-2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  right: 0;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 10px;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.searchbar-open-2{
+width:100%;
+}
+/* End Mobile Search */
+
   /* End Search Animation */
 
   @media only screen and (min-width: 770px) {
@@ -276,3 +348,36 @@ body {
       display: none !important;
     }
   }
+
+/* Modal used as sidebar */
+  @media (min-width: 576px) {
+    .modal-dialog-2 {
+      max-width: 100% !important;
+      margin: auto !important;
+  }
+  }
+
+  .modal-content-2 {
+    height: 100vh !important;
+    background: #242526 !important;
+  }
+
+  button.btn-close {
+    color: #fff !important; 
+    opacity: 1;
+}
+
+ul.sidebar-list-mobile {
+  margin: 0;
+  padding: 0;
+}
+
+ul.sidebar-list-mobile li {
+  padding: 7px 0;
+}
+
+ul.sidebar-list-mobile li a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
