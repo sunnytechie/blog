@@ -5,12 +5,35 @@ body {
 .scroll-navbar{
   position: sticky;
     top: 54px;
-    background:#232323;
+    background:#242526;
     width:100%;
-    z-index: 1;
+    z-index: 999999;
     margin-bottom: 50px;
-    border-top: 1px solid #9d9d9d;
+    border-top: 1px solid #504b4b;
 }
+
+@media screen and (max-width: 767px) {
+  .scroll-navbar{
+    position: relative !important;
+    top: 30px !important;
+    z-index: 1 !important;
+  }
+
+  .scroll-nav button{
+    padding: 8px !important;
+    display:block;
+    color:#9d9d9d;
+    text-size-adjust: 100%;
+    text-decoration: none;
+    border: none !important;
+  }
+
+  .info-section{
+    display: none !important;
+  }
+
+}
+  
 
         .scroll-nav button{
           padding:10px 20px;
@@ -213,7 +236,7 @@ body {
     right: 0;
     border: 0;
     outline: 0;
-    background: #1B1B1B;
+    background: #242526;
     width: 100%;
     margin: 0;
     padding: 4px 10px 4px 20px;
@@ -222,23 +245,24 @@ body {
 }
 
 .searchbar input[type=search]:focus{
-  background: #232323 !important;     /* oranges! yey */
+  background: #3a3b3c !important;
+  border-radius: 20px;
 }
 
 .searchbar-input::-webkit-input-placeholder {
-    color: #fff
-}
-
-.searchbar-input:-moz-placeholder {
-    color: #fff
+    color: #fff;
 }
 
 .searchbar-input::-moz-placeholder {
-    color: #fff
+    color: #fff;
 }
 
-.searchbar-input:-ms-input-placeholder {
-    color: #fff
+.searchbar-input::-moz-placeholder {
+    color: #fff;
+}
+
+.searchbar-input::-ms-input-placeholder {
+    color: #fff;
 }
 
 .searchbar-icon,
@@ -285,7 +309,7 @@ body {
   right: 0;
   border: 0;
   outline: 0;
-  background: #1B1B1B;
+  background: #242526;
   width: 100%;
   margin: 0;
   padding: 4px 10px 4px 20px;
@@ -294,23 +318,24 @@ body {
 }
 
 .searchbar-2 input[type=search]:focus{
-background: #232323 !important;     /* oranges! yey */
+  background: #3a3b3c !important;
+  border-radius: 20px;
 }
 
 .searchbar-input-2::-webkit-input-placeholder {
-  color: #fff
-}
-
-.searchbar-input-2:-moz-placeholder {
-  color: #fff
+  color: #fff;
 }
 
 .searchbar-input-2::-moz-placeholder {
   color: #fff
 }
 
-.searchbar-input-2:-ms-input-placeholder {
-  color: #fff
+.searchbar-input-2::-moz-placeholder {
+  color: #fff;
+}
+
+.searchbar-input-2::-ms-input-placeholder {
+  color: #fff;
 }
 
 .searchbar-icon-2,
@@ -380,4 +405,97 @@ ul.sidebar-list-mobile li a {
   color: #fff;
   text-decoration: none;
   list-style: none;
+}
+
+ul.sidebar-list-mobile li span {
+  margin-right: 12px;
+}
+
+.sign-up-in-form input {
+  background-color: #242526;
+  color: #fff !important;
+  padding-left: 35px;
+}
+
+.sign-up-in-form input[type=text]:focus{
+  background: #232323 !important; 
+  }
+
+  .sign-up-in-form input[type=email]:focus{
+    background: #232323 !important; 
+    }
+
+    .sign-up-in-form input[type=password]:focus{
+      background: #232323 !important; 
+      }
+
+
+  .sign-up-in-form input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  
+  .sign-up-in-form input::-moz-placeholder {
+    color: #fff;
+  }
+  
+  .sign-up-in-form input::-moz-placeholder {
+    color: #fff;
+  }
+  
+  .sign-up-in-form input::-ms-input-placeholder {
+    color: #fff;
+  }
+
+  .sign-up-in-form input[type='checkbox']{
+    width: 14px !important;
+    height: 18px !important;
+  }
+
+  input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 1000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+/* div.scrollmenu {
+  background-color: #242526;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu button {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu button:hover {
+  background-color: #777;
+}
+
+@media (min-width: 769px) {
+.mobile-tab {
+  display: none !important;
+}
+}
+
+.mobile-tab {
+  border-top: 1px solid #504b4b;
+  margin-top: 52px;
+} */
+
+footer {
+  background-color: #242526;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.play-button i {
+  font-size: 40px;
+  color: #fff;
 }

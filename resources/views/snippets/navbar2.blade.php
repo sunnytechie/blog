@@ -1,8 +1,10 @@
-<nav class="navbar2 fixed-top" style="background: #1b1b1b; color: #fff">
+<nav class="navbar2 fixed-top shadow" style="background: #242526; color: #fff">
     <div class="container">
         <div class="d-flex justify-content-between" style="padding: 16px 0 8px 0">
             <div class="nav-brand-mobile">
+              <a href="/" style="color: #ffc">
                 Sisters.Fellowship.Int'l
+              </a>
             </div>
             <div class="d-flex">
                 <div style="margin-top: -7px; margin-right: 5px">
@@ -11,11 +13,11 @@
                         <span class="searchbar-icon-2">
                           <i class="bi bi-search"></i>
                         </span> 
-                      </form>
+                    </form>
                 </div>
                 <div style="margin-top: -6px">
                         <button style="color: #fff" type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <span><i class="bi bi-gear"></i></span>
+                            <span><i class="bi bi-person-circle"></i></span>
                         </button>
                     </a>
                 </div>
@@ -37,8 +39,13 @@
         </div>
         <div class="modal-body">
           <ul class="sidebar-list-mobile">
-              <li><a href="#"><span><i class="bi bi-bookmark-plus"></i></span> Prayer Request</a></li>
-              <li><a href="#"><span><i class="bi bi-bookmark-plus"></i></span> Prayer Request</a></li>
+              <li><a href="#"><span><i class="bi bi-person-badge"></i></span> Profile</a></li>
+              <li><a href="#"><span><i class="bi bi-book"></i></span> Prayer Request</a></li>
+              <li><a href="#"><span><i class="bi bi-blockquote-right"></i></span> Testimony</a></li>
+              <li><a href="#"><span><i class="bi bi-cash-coin"></i></span> Donation</a></li>
+              <li><a href="#"><span><i class="bi bi-person-rolodex"></i></span> Contact Us</a></li>
+              <li><a href="#"><span><i class="bi bi-building"></i></span> About Us</a></li>
+              <li><a href="#"><span><i class="bi bi-box-arrow-left"></i></span> LogOut</a></li>
           </ul>
         </div>
         <div class="modal-footer d-flex" style="color: rgb(216, 201, 201)">

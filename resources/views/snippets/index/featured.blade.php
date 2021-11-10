@@ -1,9 +1,9 @@
 <section class="tab-pane fade show active" role="tabpanel" aria-labelledby="featured-tab" id="featured">
     
-  <div class="mb-3">
+  {{-- <div class="mb-3">
     <h4 class="mb-0">Featured</h4>
     <span style="color: #fff">Top stories</span>
-  </div>
+  </div> --}}
     
     <div class="card my-card mb-3">
       <div class="card-header mb-0 pb-0">

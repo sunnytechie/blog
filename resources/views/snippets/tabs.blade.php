@@ -30,7 +30,7 @@
           <button class="nav-link" id="devotions-tab" data-bs-toggle="tab" data-bs-target="#devotions" type="button" role="tab" aria-controls="devotions" aria-selected="false">Devotional</button>
         </li> 
 
-        <li class="nav-item" role="presentation">
+        <li class="nav-item" role="presentation">    
           <button class="nav-link" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible" type="button" role="tab" aria-controls="bible" aria-selected="false">Bible</button>
         </li> 
 

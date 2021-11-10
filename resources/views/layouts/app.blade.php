@@ -41,6 +41,8 @@
         <main class="mt-4">
             @yield('content')
         </main>
+
+        @include('snippets.footer')
     </div>
 </body>
 

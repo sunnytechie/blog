@@ -1,8 +1,8 @@
 
   <section class="tab-pane fade" role="tabpanel" aria-labelledby="events-tab" id="events">
     
-    <h4 class="mb-0">News</h4>
-    <span style="color: #fff">Most recent events</span>
+    {{-- <h4 class="mb-0">News</h4>
+    <span style="color: #fff">Most recent events</span> --}}
 
     <div class="card my-card mb-2" onclick="location.href='#';">
       <div class="card-body d-flex justify-content-between">

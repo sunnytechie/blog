@@ -1,7 +1,7 @@
 <section class="tab-pane fade" role="tabpanel" aria-labelledby="devotions-tab" id="devotions">
 
-    <h4 class="mb-0">Daily Devotions</h4>
-    <span style="color: #fff">Quiet time with Jesus</span>
+    {{-- <h4 class="mb-0">Daily Devotions</h4>
+    <span style="color: #fff">Quiet time with Jesus</span> --}}
 
     <div class="card my-card mb-2" onclick="location.href='#';">
       <div class="card-body d-flex justify-content-between">

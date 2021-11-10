@@ -1,8 +1,8 @@
-<nav class="navbar navbar1 fixed-top navbar-expand-md" style="background: #1b1b1b; color: #fff">
+<nav class="navbar navbar1 fixed-top navbar-expand-md shadow" style="background: #242526; color: #fff">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         {{-- <img src="https://www.sfiloveinaction.org/wp-content/uploads/2019/10/cropped-SFI-Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> --}}
-         <span>Sisters.FellowShip.Int'l</span>
+         <span style="color: #ffc">Sisters.FellowShip.Int'l</span>
       </a>
       <button style="border: 0 !important" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span style="color: #fff"><i class="bi bi-menu-down"></i></span>

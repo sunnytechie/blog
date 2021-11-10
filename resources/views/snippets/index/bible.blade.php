@@ -1,7 +1,7 @@
 <section class="tab-pane fade" role="tabpanel" aria-labelledby="bible-tab" id="bible">
   
-    <h4 class="mb-0">The Bible</h4>
-    <span style="color: #fff">Get Inspired by the word of God</span>
+    {{-- <h4 class="mb-0">The Bible</h4>
+    <span style="color: #fff">Get Inspired by the word of God</span> --}}
 
     <div class="card my-card mb-2" onclick="location.href='#';">
       <div class="card-body d-flex justify-content-between">

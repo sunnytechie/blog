@@ -1,8 +1,8 @@
 
   <section class="tab-pane fade" role="tabpanel" aria-labelledby="transcript-tab" id="transcript">
     
-    <h4 class="mb-0">Sermon Notes</h4>
-    <span style="color: #fff">Transcripts</span>
+    {{-- <h4 class="mb-0">Sermon Notes</h4>
+    <span style="color: #fff">Transcripts</span> --}}
 
     <div class="card my-card mb-2" onclick="location.href='#';">
       <div class="card-body d-flex justify-content-between">
