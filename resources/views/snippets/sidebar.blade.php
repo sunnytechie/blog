@@ -6,7 +6,7 @@
     </div>
     <div class="card-body">
         <p>Higher official conference 2021</p>
-        <a href="#" class="btn btn-primary w-100 btn-color">Registered Now</a>
+        <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Registered Now</a>
     </div>
   </div>
 

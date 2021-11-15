@@ -31,14 +31,26 @@
             <a class="nav-link" href="#"><i class="bi bi-chat-text"></i> Discussions</a>
           </li>
 
+          @guest
+            
+          @endguest
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-house-door"></i> Ministry
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> prayer requests</a></li>
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> Testimony</a></li>
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> Donations</a></li>
+              @if (Auth::check())
+                <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> prayer requests</a></li>
+                <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> Testimony</a></li>
+                <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> Donations</a></li>
+              @else
+              @if (Route::has('login'))
+              <li class="nav-item">
+                <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-box-arrow-in-right"></i></span> Login</a></li>
+              </li>
+              @endif 
+              @endif
+              
             </ul>
           </li>
 
@@ -47,9 +59,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="bi bi-box-arrow-left"></i> Login</a>
           </li>
-          @endif
-          @endguest
+          @endif 
 
+          @else
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle"></i> Info
@@ -64,6 +76,9 @@
               <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-box-arrow-left"></i></span> SignOut</a></li>
             </ul>
           </li>
+          @endguest
+
+          
           {{-- <li class="nav-item">
             <a href="#" class="nav-link btn btn-default btn-md mt-1" role="button" data-bs-toggle="button" style="background: rgb(255, 255, 255); color: #000; padding: 4px 6px;">Sign Up</a>
           </li> --}}

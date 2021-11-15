@@ -5,7 +5,7 @@
       <div class="col">
         <div class="card bg-dark text-white">
           <img src="{{ asset('assets/imgs/tree-gb4a9bba8d_640.jpg') }}" class="card-img opacity-100" alt="...">
-          <div class="card-img-overlay">
+          <div class="card-img-overlay" style="background: rgba(58, 57, 57, 0.5);">
             <div class="play-button">
               <span><i class="bi bi-mic"></i></span>
             </div>

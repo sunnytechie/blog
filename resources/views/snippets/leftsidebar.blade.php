@@ -5,7 +5,7 @@
         <div class="d-flex align-items-center" style="cursor: pointer">
 
         <div class="card-body">
-            <h5>Happening live!</h5> 
+            <h5 style="font-size: 16px">Happening live!</h5> 
         </div>
 
         <div class="lds-loader">
@@ -44,7 +44,7 @@
           </div>
           <div class="card-body">
               <p>Higher official conference 2021</p>
-              <a href="#" class="btn btn-primary w-100 btn-color">Registered Now</a>
+              <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Registered Now</a>
           </div>
         </div>
       </div>
