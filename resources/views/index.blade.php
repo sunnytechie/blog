@@ -15,6 +15,8 @@
       {{-- Main --}}
       <div class="col-lg-6 include-snippets">
         <div class="tab-content" id="myTabContent">
+
+        @include('snippets.index.uploads')
           
         @include('snippets.index.featured')
         

@@ -12,13 +12,14 @@
           <div class="flex-shrink-0">
             <img height="45" width="45" class="rounded-circle img-fluid border border-3 border-primary" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt="...">
           </div>
-          <div class="flex-grow-1 ms-3">
-            This is some content from a media component. You can replace this with any content and adjust it as needed.
+          <div class="flex-grow-1 ms-2">
+            <Span style="font-weight: 550">Sisters' Fellowship International</Span> <br>
+            <span style="font-size: 12px; color: rgb(179, 171, 171)">uploaded Yesterday</span>
           </div>
         </div>
         {{-- end header flex --}}
         
-        <div>
+        <div class="pt-2">
           <p>Higher officials conference</p>
         </div>
       </div>

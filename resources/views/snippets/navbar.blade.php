@@ -1,8 +1,8 @@
-<nav class="navbar navbar1 fixed-top navbar-expand-md shadow" style="background: #242526; color: #fff">
+<nav class="navbar navbar1 fixed-top navbar-expand-md" style="background: #242526; color: #fff">
     <div class="container">
       <a class="navbar-brand" href="/">
         {{-- <img src="https://www.sfiloveinaction.org/wp-content/uploads/2019/10/cropped-SFI-Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> --}}
-         <span style="color: #ffc">Sisters.FellowShip.Int'l</span>
+         <span style="color: rgb(238, 238, 232)"> <img height="28" width="28" class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt=""> Sisters.FellowShip.Int'l</span>
       </a>
       <button style="border: 0 !important" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span style="color: #fff"><i class="bi bi-menu-down"></i></span>
@@ -60,7 +60,7 @@
               <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-house"></i></span> About Us</a></li>
               <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-info-square"></i></span> FAQ</a></li>
               <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-question"></i></span> Help</a></li>
-              <div style="height: 1px; width: 100%; background: rgb(41, 40, 40)"></div>
+              <div style="height: 1px; width: 100%; background: rgb(221, 218, 218)"></div>
               <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-box-arrow-left"></i></span> SignOut</a></li>
             </ul>
           </li>

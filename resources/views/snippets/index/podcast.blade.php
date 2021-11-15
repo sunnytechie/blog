@@ -11,7 +11,7 @@
             </div>
           </div>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="padding-left: 0">
           <h5 class="card-title">Card title</h5>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>

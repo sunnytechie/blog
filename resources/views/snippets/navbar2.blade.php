@@ -1,9 +1,9 @@
-<nav class="navbar2 fixed-top shadow" style="background: #242526; color: #fff">
+<nav class="navbar2 fixed-top" style="background: #242526; color: #fff">
     <div class="container">
         <div class="d-flex justify-content-between" style="padding: 16px 0 8px 0">
             <div class="nav-brand-mobile">
               <a href="/" style="color: #ffc">
-                Sisters.Fellowship.Int'l
+                <img height="28" width="28" class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt=""> Sis.Fel.Int'l
               </a>
             </div>
             <div class="d-flex">
@@ -32,7 +32,7 @@
     <div class="modal-dialog  modal-dialog-scrollable modal-dialog-2">
       <div class="modal-content modal-content-2">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Bebas Neue', cursive;">Sisters' Fellowship Int'l</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Raleway', sans-serif;">Sisters' Fellowship Int'l</h5>
         <span style="color: #fff !important" data-bs-dismiss="modal" aria-label="Close">
             <i class="bi bi-x-lg"></i>
         </span>
