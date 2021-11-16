@@ -39,13 +39,30 @@
         </div>
         <div class="modal-body">
           <ul class="sidebar-list-mobile">
+            @if (Auth::check())
               <li><a href="#"><span><i class="bi bi-person-badge"></i></span> Profile</a></li>
               <li><a href="#"><span><i class="bi bi-book"></i></span> Prayer Request</a></li>
               <li><a href="#"><span><i class="bi bi-blockquote-right"></i></span> Testimony</a></li>
               <li><a href="#"><span><i class="bi bi-cash-coin"></i></span> Donation</a></li>
               <li><a href="#"><span><i class="bi bi-person-rolodex"></i></span> Contact Us</a></li>
               <li><a href="#"><span><i class="bi bi-building"></i></span> About Us</a></li>
-              <li><a href="#"><span><i class="bi bi-box-arrow-left"></i></span> LogOut</a></li>
+              <li>
+                <a href="{{ route('logout') }}"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <span><i class="bi bi-box-arrow-left"></i></span> Log Out</a>
+              </li>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+            @else
+            <li>
+              <a href="{{ route('login') }}">
+                <span><i class="bi bi-box-arrow-left"></i></span> Sign In
+              </a>
+              </li>
+            @endif
+              
+              
           </ul>
         </div>
         <div class="modal-footer d-flex" style="color: rgb(216, 201, 201)">

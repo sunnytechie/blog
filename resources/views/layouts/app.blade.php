@@ -33,6 +33,7 @@
 
     {{-- My custom CSS --}}
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+
 </head>
 
 <body>

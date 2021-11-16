@@ -439,6 +439,8 @@ ul.sidebar-list-mobile li a {
   color: #fff;
   text-decoration: none;
   list-style: none;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
 }
 
 ul.sidebar-list-mobile li span {
@@ -524,7 +526,7 @@ div.scrollmenu button:hover {
 
 footer {
   background-color: #242526;
-  color: #fff;
+  color: rgb(202, 198, 198);
   padding: 20px 0;
   text-align: center;
 }
@@ -564,4 +566,17 @@ footer {
   background-color: #3A3B3C;
   border-radius: 100px;
   border: 1px solid #294a75;
+}
+
+footer li a.nav-link {
+  color: rgb(211, 205, 205) !important;
+  font-size: small;
+}
+
+#staticBackdropPost .modal-content,
+#staticBackdropMedia .modal-content,
+#staticBackdropDevotional .modal-content,
+#staticBackdropQoutes .modal-content {
+  background-color: #3A3B3C;
+  color: rgb(221, 216, 216);
 }
