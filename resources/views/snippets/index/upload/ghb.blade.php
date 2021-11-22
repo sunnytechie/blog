@@ -5,7 +5,7 @@
           <h5 class="modal-title" id="staticBackdropLabel">Searching for GHB</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="{{ route('store.post') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('store.devotion') }}" method="POST" enctype="multipart/form-data">
           @csrf
   
         <div class="modal-body">
@@ -64,7 +64,7 @@
                   @enderror
               </div>
 
-              <div class="form-group">
+              {{-- <div class="form-group">
                 <label for="sound">Audio</label>
                 <input type="file" class="form-control-file w-100" id="sound" name="sound">
 
@@ -73,7 +73,7 @@
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
-            </div>
+            </div> --}}
   
               <div class="form-group">
                   <label for="category">Category</label>

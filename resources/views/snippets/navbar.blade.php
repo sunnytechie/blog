@@ -31,13 +31,7 @@
             <a class="nav-link" href="#"><i class="bi bi-chat-text"></i> Discussions</a>
           </li>
 
-          @guest
-            @if (Route::has('login'))
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}"><span><i class="bi bi-box-arrow-in-right"></i></span> Login</a>
-          </li>
-          @endif
-          @endguest
+          
 
           @guest
           @if (Route::has('login'))
@@ -76,10 +70,14 @@
           </li>
           @endguest
 
-          
-          {{-- <li class="nav-item">
-            <a href="#" class="nav-link btn btn-default btn-md mt-1" role="button" data-bs-toggle="button" style="background: rgb(255, 255, 255); color: #000; padding: 4px 6px;">Sign Up</a>
-          </li> --}}
+          @guest
+            @if (Route::has('register'))
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('register') }}"><span><i class="bi bi-person-circle"></i></span> Sign Up</a>
+          </li>
+          @endif
+          @endguest
+
 
         </ul>
       </div>

@@ -462,7 +462,7 @@ ul.sidebar-list-mobile li span {
 
 .sign-up-in-form input {
   background-color: #242526;
-  color: #fff !important;
+  color: rgb(207, 206, 206) !important;
   padding-left: 35px;
 }
 
@@ -480,19 +480,19 @@ ul.sidebar-list-mobile li span {
 
 
   .sign-up-in-form input::-webkit-input-placeholder {
-    color: #fff;
+    color: rgb(165, 161, 161);
   }
   
   .sign-up-in-form input::-moz-placeholder {
-    color: #fff;
+    color: rgb(165, 161, 161);
   }
   
   .sign-up-in-form input::-moz-placeholder {
-    color: #fff;
+    color: rgb(165, 161, 161);
   }
   
   .sign-up-in-form input::-ms-input-placeholder {
-    color: #fff;
+    color: rgb(165, 161, 161);
   }
 
   .sign-up-in-form input[type='checkbox']{

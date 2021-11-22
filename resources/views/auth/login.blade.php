@@ -14,7 +14,7 @@
                                 <img class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt="">
                             </div>
                                 
-                                <h3 class="mb-4 text-center">Log in</h3>
+                                <h5 class="mb-4 text-center">Log in</h5>
 
                            
                                 <div class="mb-3 row">
