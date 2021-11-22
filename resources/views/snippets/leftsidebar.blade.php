@@ -1,6 +1,5 @@
 <section>
     <div class="card my-card mb-2">
-
       <a target="_blank" href="#">
         <div class="d-flex align-items-center" style="cursor: pointer">
 
@@ -16,7 +15,17 @@
 
       </div>
       </a>
+    </div>
+
+    <div class="card my-card mb-2">
+      <div class="card-header">
+        Donations
       </div>
+      <div class="card-body">
+          <p>You can pay your tithe and offering online.</p>
+          <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Pay here!</a>
+      </div>
+    </div>
 
       <div class="info-section">
         <div class="card my-card mb-2" onclick="location.href='#';">
@@ -47,6 +56,7 @@
               <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Registered Now</a>
           </div>
         </div>
+
       </div>
       
       

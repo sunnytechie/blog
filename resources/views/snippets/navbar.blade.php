@@ -32,27 +32,12 @@
           </li>
 
           @guest
-            
-          @endguest
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-house-door"></i> Ministry
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              @if (Auth::check())
-                <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> prayer requests</a></li>
-                <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> Testimony</a></li>
-                <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-star"></i></span> Donations</a></li>
-              @else
-              @if (Route::has('login'))
-              <li class="nav-item">
-                <li><a class="dropdown-item" style="padding: 6px 20px;" href="{{ route('login') }}"><span style="margin-right: 6px"><i class="bi bi-box-arrow-in-right"></i></span> Login</a></li>
-              </li>
-              @endif 
-              @endif
-              
-            </ul>
+            @if (Route::has('login'))
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('login') }}"><span><i class="bi bi-box-arrow-in-right"></i></span> Login</a>
           </li>
+          @endif
+          @endguest
 
           @guest
           @if (Route::has('login'))
@@ -67,15 +52,16 @@
                 <i class="bi bi-person-circle"></i> Info
             </a>
             <ul class="dropdown-menu dropdown-menu-2" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-person"></i></span> Profile</a></li>
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-telephone"></i></span> Contact us</a></li>
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-house"></i></span> About Us</a></li>
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-info-square"></i></span> FAQ</a></li>
-              <li><a class="dropdown-item" style="padding: 6px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-question"></i></span> Help</a></li>
-              <div style="height: 1px; width: 100%; background: rgb(221, 218, 218)"></div>
+              <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-person"></i></span> Profile</a></li>
+              <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-telephone"></i></span> Contact us</a></li>
+              <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-house"></i></span> About Us</a></li>
+              <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-info-square"></i></span> FAQ</a></li>
+              <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-question"></i></span> Help</a></li>
+  
+              <div style="height: 1px; width: 100%; background: #3A3B3C;"></div>
 
               <li>
-                <a class="dropdown-item" style="padding: 6px 20px;" 
+                <a class="dropdown-item" style="padding: 10px 20px;" 
                 href="{{ route('logout') }}"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <span style="margin-right: 6px">

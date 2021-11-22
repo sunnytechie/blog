@@ -7,25 +7,38 @@ h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
 }
 
-p {
+h5.modal-title {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
 }
 
+label {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}
+
 span {
   font-family: 'Raleway', sans-serif;
+  font-size: 13px;
 }
 
 li a {
   font-family: 'Raleway', sans-serif;
+  font-size: 13px;
 }
 
 li {
   font-family: 'Raleway', sans-serif;
+  font-size: 13px;
 }
 
 a {
   font-family: 'Raleway', sans-serif;
+  font-size: 13px;
 }
 
 
@@ -134,7 +147,7 @@ div {
   @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .dropdown-menu {
       margin-top: 7px;
-      left: -90px;
+      left: -105px;
   }
   }
   
@@ -144,7 +157,7 @@ div {
     bottom: 100%;
     right: 19px;
     border: 11px solid transparent;
-    border-bottom-color: #fff;
+    border-bottom-color: #464545;
   }
 
   .dropdown-menu::after {
@@ -495,34 +508,21 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #fff !important;
 }
 
-/* div.scrollmenu {
-  background-color: #242526;
-  overflow: auto;
-  white-space: nowrap;
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+    transition: background-color 1000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
 }
 
-div.scrollmenu button {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+    transition: background-color 1000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
 }
-
-div.scrollmenu button:hover {
-  background-color: #777;
-}
-
-@media (min-width: 769px) {
-.mobile-tab {
-  display: none !important;
-}
-}
-
-.mobile-tab {
-  border-top: 1px solid #504b4b;
-  margin-top: 52px;
-} */
 
 footer {
   background-color: #242526;
@@ -568,6 +568,29 @@ footer {
   border: 1px solid #294a75;
 }
 
+.modal .btn {
+  color: #2D88FF;
+  border-radius: 100px;
+  border: 1px solid #294a75;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.modal .btn:hover {
+  color: #2D88FF;
+  background-color: #3A3B3C;
+  border-radius: 100px;
+  border: 1px solid #294a75;
+}
+
+.modal .modal-footer {
+  border-top: 1px solid rgb(112, 109, 109);
+}
+
+.modal .modal-header {
+  border-bottom: 1px solid rgb(112, 109, 109);
+}
+
 footer li a.nav-link {
   color: rgb(211, 205, 205) !important;
   font-size: small;
@@ -579,4 +602,67 @@ footer li a.nav-link {
 #staticBackdropQoutes .modal-content {
   background-color: #3A3B3C;
   color: rgb(221, 216, 216);
+}
+
+#staticBackdropPost input,
+#staticBackdropMedia input,
+#staticBackdropDevotional input,
+#staticBackdropQoutes input {
+  background-color: #242526;
+  color: #fff !important;
+  border: 1px solid rgb(112, 109, 109);
+}
+
+#staticBackdropPost textarea,
+#staticBackdropMedia textarea,
+#staticBackdropDevotional textarea,
+#staticBackdropQoutes textarea {
+  background-color: #242526;
+  color: #fff !important;
+  border: 1px solid rgb(112, 109, 109);
+}
+
+#staticBackdropPost select,
+#staticBackdropMedia select,
+#staticBackdropDevotional select,
+#staticBackdropQoutes select {
+  background-color: #242526;
+  color: #fff !important;
+  border: 1px solid rgb(112, 109, 109);
+}
+
+#staticBackdropPost .form-group,
+#staticBackdropMedia .form-group,
+#staticBackdropDevotional .form-group,
+#staticBackdropQoutes .form-group {
+  padding-bottom: 12px;
+}
+
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+  background-color: #242526;
+  color: #fff !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable:focus {
+  background-color: #242526 !important;
+  color: #fff !important;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+  background-color: #242526;
+  color: #dadada;
+  border: 1px solid#464545;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu .dropdown-item {
+  color: #dadada;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #3A3B3C;
+}
+
+.dropdown-menu {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

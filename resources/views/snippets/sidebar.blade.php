@@ -10,6 +10,16 @@
     </div>
   </div>
 
+  <div class="card my-card mb-2">
+    <div class="card-header">
+      Prayer/Testimony
+    </div>
+    <div class="card-body">
+        <p>Kindly Send Your Prayer Request or Testimonies here and we will recieve it.</p>
+        <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Submit here</a>
+    </div>
+  </div>
+
   <div class="card my-card mb-2" onclick="location.href='#';">
     <div class="card-header">
       Bible
