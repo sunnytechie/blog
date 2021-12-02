@@ -143,4 +143,78 @@ class PostController extends Controller
         
         return redirect()->route('index.post')->with('status', 'You\'ve successfully created a new post.');
     }
+
+
+
+    //show post
+    public function showPost($id) {
+        $post = Post::find($id);
+        $postId = $post->id;
+        $postTitle = $post->title;
+        $postBody = $post->body;
+        $postCategory = $post->category;
+        $postEventLocation = $post->event_location;
+        $postDisplayDate = $post->display_date;
+        $postThumbnail = $post->thumbnail;
+        $postUrl = $post->url;
+        $postSound = $post->sound;
+        $postMemoryVerse = $post->memory_verse;
+        $postPrayer = $post->prayer;
+        $postCreatedAt = $post->created_at;
+        $postUpdatedAt = $post->updated_at;
+        return view('snippets.index.pages.showpost', compact('post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
+    }
+
+    //show media
+    public function showMedia($id) {
+        $post = Post::find($id);
+        $postId = $post->id;
+        $postTitle = $post->title;
+        $postBody = $post->body;
+        $postCategory = $post->category;
+        $postEventLocation = $post->event_location;
+        $postDisplayDate = $post->display_date;
+        $postThumbnail = $post->thumbnail;
+        $postUrl = $post->url;
+        $postSound = $post->sound;
+        $postMemoryVerse = $post->memory_verse;
+        $postPrayer = $post->prayer;
+        $postCreatedAt = $post->created_at;
+        $postUpdatedAt = $post->updated_at;
+        return view('snippets.index.pages.showmedia', compact('post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
+    }
+
+    //show Devotions
+    public function showDevotion($id) {
+        $post = Post::find($id);
+        $postId = $post->id;
+        $postTitle = $post->title;
+        $postBody = $post->body;
+        $postCategory = $post->category;
+        $postEventLocation = $post->event_location;
+        $postDisplayDate = $post->display_date;
+        $postThumbnail = $post->thumbnail;
+        $postUrl = $post->url;
+        $postSound = $post->sound;
+        $postMemoryVerse = $post->memory_verse;
+        $postPrayer = $post->prayer;
+        $postCreatedAt = $post->created_at;
+        $postUpdatedAt = $post->updated_at;
+
+        //Find date format
+        $timestamp = strtotime($post->display_date);
+        
+
+        //Uppercase letters gives day, month in language(Jan, Third, etc)
+        $day = date('D', $timestamp);
+
+        $month = date('M', $timestamp);
+
+        $year = date('Y', $timestamp);
+
+        //use a combination of both, eg: 01 June
+        $final_Date = date('dS', $timestamp) .' '. date('M', $timestamp) .' '. date('Y', $timestamp);
+
+        return view('snippets.index.pages.showdevotion', compact('final_Date', 'post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
+    }
 }

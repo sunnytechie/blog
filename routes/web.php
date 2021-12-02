@@ -18,10 +18,14 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\MainController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\MainController::class, 'index'])->name('index.post');
 
-//Autthentication Path
+//Autthenticated Path
 Route::middleware('auth')->group(function () {
 Route::post('/post/store', [App\Http\Controllers\PostController::class, 'storePost'])->name('store.post');
 Route::post('/media/store', [App\Http\Controllers\PostController::class, 'storeMedia'])->name('store.media');
 Route::post('/quote/store', [App\Http\Controllers\PostController::class, 'storeQuote'])->name('store.quote');
 Route::post('/devotion/store', [App\Http\Controllers\PostController::class, 'storeDevotion'])->name('store.devotion');
 });
+
+Route::get('/post/{id}', [App\Http\Controllers\PostController::class, 'showPost'])->name('show.post');
+Route::get('/media/{id}', [App\Http\Controllers\PostController::class, 'showMedia'])->name('show.media');
+Route::get('/devotion/{id}', [App\Http\Controllers\PostController::class, 'showDevotion'])->name('show.devotion');

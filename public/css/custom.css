@@ -85,7 +85,7 @@ div {
         .scroll-nav button{
           padding:10px 20px;
           display:block;
-          color:#9d9d9d;
+          color:#e4e2e2;
           text-size-adjust: 100%;
           text-decoration: none;
           border: none !important;
@@ -665,4 +665,29 @@ footer li a.nav-link {
 .dropdown-menu {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.card-title {
+  color: rgb(233, 230, 230);
+  font-size: 14px;
+}
+
+.scroller {
+  width: 300px;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin:0 auto;
+}
+.containerr {
+  position: relative; /*important for the .position() method */
+  height: 100px;
+  width: 770px;
+}
+.containerr div {
+  height: 90px;
+  width: 60px;
+  float: left;
+  margin: 5px;
+  background: #39f;
 }

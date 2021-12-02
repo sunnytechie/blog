@@ -7,7 +7,7 @@
                 <div class="mt-4">
                     <form 
                     style="background: #242526" 
-                    class="shadow p-4 sign-up-in-form" method="POST" action="{{ route('login') }}">
+                    class="shadow rounded p-4 sign-up-in-form" method="POST" action="{{ route('login') }}">
                             @csrf
 
                             <div style="text-align: center" class="p-2">

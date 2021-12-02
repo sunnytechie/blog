@@ -2,11 +2,11 @@
 
   <div class="card my-card mb-2">
     <div class="card-header">
-      Join the Conference
+      Business Profile
     </div>
     <div class="card-body">
-        <p>Higher official conference 2021</p>
-        <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Registered Now</a>
+        <p>Build a personal Business account with other Sisters' in the ministry.</p>
+        <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Let Build</a>
     </div>
   </div>
 

@@ -8,7 +8,7 @@
 
                     <form 
                     style="background: #242526" 
-                    class="shadow p-4 sign-up-in-form" method="POST" action="{{ route('register') }}">
+                    class="shadow rounded p-4 sign-up-in-form" method="POST" action="{{ route('register') }}">
                         @csrf
                         <div style="text-align: center" class="p-2">
                         <img class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt="">

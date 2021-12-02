@@ -70,7 +70,7 @@
               </div>
   
               <div class="form-group">
-                  <label for="url">Video/Podcast url</label>
+                  <label for="url">Video/Podcast ID Number</label>
                   <input type="text" class="form-control" id="url" name="url" placeholder="Enter Event Location">
   
                   @error('url')
