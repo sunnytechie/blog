@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
 
 <body>
     <div id="app">
-        
+
         @include('snippets.navbar')
 
         <main class="mt-4">
@@ -179,66 +179,6 @@
         .catch( error => {
             console.error( error );
         } );
-</script>
-
-<script>
-    //dark mode
-function myFunction() {
-  var element = document.getElementById('agenda');
-  element.classList.toggle("dark-mode");
-
-  var x = document.getElementById("btnValue");
-  if (x.innerHTML === "Dark mode") {
-    x.innerHTML = "Light mode";
-    x.classList.remove('btn-dark')
-    x.classList.toggle('btn-light')
-  } else {
-    x.innerHTML = "Dark mode";
-    x.classList.remove('btn-light')
-    x.classList.toggle('btn-dark')
-  }
-
-}
-
-// SLIDER
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 5000,
-  },
-  // init: false,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.next-btn',
-    prevEl: '.prev-btn',
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 10,
-    },
-
-    // 1440:{
-    //   slidesPerView: 5,
-    //   spaceBetween: 10,
-    // },
-
-  }
-});
 </script>
 
 </html>
