@@ -1,17 +1,12 @@
 <section>
     <div class="card my-card mb-2">
       <a target="_blank" href="#">
-        <div class="d-flex align-items-center" style="cursor: pointer">
+        <div style="cursor: pointer">
 
-        <div class="card-body">
-            <h5 style="font-size: 16px">Happening live!</h5> 
-        </div>
-
-        <div class="lds-loader">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <button class="btn btn-default w-100" type="button" style="color: #ddd">
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Happening Live...
+        </button>
 
       </div>
       </a>
@@ -32,7 +27,7 @@
           <div class="card-header">
             Today Devotion
           </div>
-  
+
           <div class="card-body d-flex justify-content-between">
             <div class="blockqout">
               <blockquote class="blockquote mb-0">
@@ -45,8 +40,8 @@
             </div>
           </div>
         </div>
-        
-  
+
+
         <div class="card my-card mb-2">
           <div class="card-header">
             Join the Conference
@@ -58,6 +53,6 @@
         </div>
 
       </div>
-      
-      
+
+
 </section>
