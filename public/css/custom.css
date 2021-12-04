@@ -715,7 +715,8 @@ footer li a.nav-link {
 
 .item .card-body a {
     color: #dadada;
-}
+    text-decoration: none;
+    }
 
 .scroll-navbar .nav-tabs {
     overflow-x: auto;
