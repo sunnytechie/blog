@@ -40,12 +40,12 @@
                     </li>
                 </ul>
               </div>
-              
+
         </div>
       </div>
-      
 
-        
+
+
 
         <div class="p-3" style="width: 100%; background: hsl(240, 5%, 17%)">
 
@@ -61,7 +61,9 @@
                 </li>
             </ul>
 
-           <span class="p-3" style="font-size: 12px;">© 2021 Sisters'Fellowship.International - designed with <i class="bi bi-heart-fill"></i> in Nigeria, NGA</span> 
+           <span class="p-3" style="font-size: 12px;">© 2021 Sisters'Fellowship.International - designed with <i class="bi bi-heart-fill"></i> in Nigeria, NGA</span>
         </div>
-        
+
 </Footer>
+
+<button onclick="topFunction()" class="btn btn-primary" id="scrollTopBtn" title="Go to top"><i class="bi bi-arrow-up-square"></i></button>
