@@ -8,6 +8,13 @@
         <span style="color: #fff"><i class="bi bi-menu-down"></i></span>
       </button>
 
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link btn btn-profile" href="#">Own a Profile</a>
+            </li>
+            </ul>
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
