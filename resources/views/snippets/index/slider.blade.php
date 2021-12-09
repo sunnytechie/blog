@@ -1,4 +1,4 @@
-<div class="container-fluid my-card slider">
+<div class="container-fluid my-card slider mb-3">
     <div class="card-header mb-0 pb-0">
 
         <div class="d-flex">
