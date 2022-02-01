@@ -50,7 +50,7 @@ div {
     background:#242526;
     width:100%;
     z-index: 999;
-    margin-top: 58px;
+    margin-top: 56px;
     margin-bottom: 20px;
 }
 
@@ -72,10 +72,6 @@ div {
     display: none !important;
   }
 
-}
-
-.navbar2, .navbar1 {
-  border-bottom: 1px solid rgb(82, 71, 71);
 }
 
 
@@ -420,11 +416,14 @@ ul.sidebar-list-mobile li span {
 .sign-up-in-form input {
   background-color: #242526;
   color: rgb(207, 206, 206) !important;
-  padding-left: 35px;
 }
 
 .sign-up-in-form input[type=text]:focus{
   background: #232323 !important;
+  }
+
+  .sign-up-in-form>.exclude-check-box input {
+    padding-left: 30px;
   }
 
   .sign-up-in-form input[type=email]:focus{
@@ -454,7 +453,8 @@ ul.sidebar-list-mobile li span {
 
   .sign-up-in-form input[type='checkbox']{
     width: 14px !important;
-    height: 18px !important;
+    height: 14px !important;
+    border-radius: 20px !important;
   }
 
   input:-webkit-autofill,

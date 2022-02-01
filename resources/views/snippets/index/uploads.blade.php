@@ -16,19 +16,13 @@
 </div>
 
 {{-- Post modal --}}
-<!-- Modal -->
 @include('snippets.index.upload.post')
 
 {{-- Media modal --}}
-<!-- Modal -->
 @include('snippets.index.upload.media')
 
-
 {{-- Devotional modal --}}
-<!-- Modal -->
 @include('snippets.index.upload.ghb')
 
-
 {{-- Quotes modal --}}
-<!-- Modal -->
 @include('snippets.index.upload.quotes')

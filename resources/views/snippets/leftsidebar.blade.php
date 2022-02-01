@@ -17,8 +17,8 @@
         Donations
       </div>
       <div class="card-body">
-          <p>You can pay your tithe and offering online.</p>
-          <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Pay here!</a>
+          <p>Give tithe and offering on paystack or paypal</p>
+          <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Pay Securely</a>
       </div>
     </div>
 

@@ -26,6 +26,10 @@ Route::post('/quote/store', [App\Http\Controllers\PostController::class, 'storeQ
 Route::post('/devotion/store', [App\Http\Controllers\PostController::class, 'storeDevotion'])->name('store.devotion');
 });
 
+//dispalying posts
 Route::get('/post/{id}', [App\Http\Controllers\PostController::class, 'showPost'])->name('show.post');
 Route::get('/media/{id}', [App\Http\Controllers\PostController::class, 'showMedia'])->name('show.media');
 Route::get('/devotion/{id}', [App\Http\Controllers\PostController::class, 'showDevotion'])->name('show.devotion');
+
+//Profile
+Route::get('/profiles', [App\Http\Controllers\ProfileController::class, 'index'])->name('index.profile');

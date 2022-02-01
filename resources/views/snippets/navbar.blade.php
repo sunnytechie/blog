@@ -1,17 +1,17 @@
-<nav class="navbar navbar1 fixed-top navbar-expand-md" style="background: #242526; color: #fff">
+<nav class="navbar navbar1 fixed-top navbar-expand-md shadow-sm" style="background: #242526; color: #ffffff; border-bottom: 1px solid rgb(78, 77, 77)">
     <div class="container">
       <a class="navbar-brand" href="/">
         {{-- <img src="https://www.sfiloveinaction.org/wp-content/uploads/2019/10/cropped-SFI-Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> --}}
-         <span style="color: rgb(238, 238, 232)"> <img height="28" width="28" class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt=""> Sisters.FellowShip.Int'l</span>
+         <span style="color: rgb(255, 255, 255)"> <img height="28" width="28" class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt=""> Sisters.FellowShip.Int'l</span>
       </a>
       <button style="border: 0 !important" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span style="color: #fff"><i class="bi bi-menu-down"></i></span>
+        <span><i class="bi bi-menu-down"></i></span>
       </button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link btn btn-profile" href="#">Own a Profile</a>
+                <a class="nav-link btn btn-profile" href="#" style="font-weight: bold">Join us</a>
             </li>
             </ul>
 
@@ -35,7 +35,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-people-fill"></i> MeetUp</a>
+            <a class="nav-link" href="{{ route('index.profile') }}"><i class="bi bi-people-fill"></i> SfiMeetUp</a>
           </li>
 
 
@@ -50,7 +50,7 @@
           @else
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-person-circle"></i> Info
+                <i class="bi bi-person-circle"></i> <span class="font-weight-bold">{{ Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-2" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-person"></i></span> Profile</a></li>

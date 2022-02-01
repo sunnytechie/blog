@@ -1,6 +1,6 @@
 <nav class="scroll-navbar">
     <div class="container">
-      <ul id="mainNav myTab" class="scroll-nav nav nav-tabs" role="tablist">
+      <ul id="mainNav myTab" class="scroll-nav nav nav-tabs d-flex justify-content-center" role="tablist">
         {{-- Navigation Tabs --}}
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true"><i class="bi bi-graph-up-arrow"></i> Featured</button>
