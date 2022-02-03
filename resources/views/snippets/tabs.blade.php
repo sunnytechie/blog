@@ -2,7 +2,7 @@
     <div class="container">
       <ul id="mainNav myTab" class="scroll-nav nav nav-tabs d-flex justify-content-center" role="tablist">
         {{-- Navigation Tabs --}}
-        <li class="nav-item" role="presentation">
+        <li class="nav-item nav-padding-left-on-mobile" role="presentation">
           <button class="nav-link active" id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true"><i class="bi bi-graph-up-arrow"></i> Featured</button>
         </li>
 
@@ -31,7 +31,7 @@
         </li>
 
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible" type="button" role="tab" aria-controls="bible" aria-selected="false"><i class="bi bi-book"></i> Bible</button>
+          <button class="nav-link" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible" type="button" role="tab" aria-controls="bible" aria-selected="false"><i class="bi bi-book"></i> Declarations</button>
         </li>
 
         <li class="nav-item" role="presentation">

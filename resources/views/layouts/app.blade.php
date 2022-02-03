@@ -7,8 +7,10 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta name="description" content="Sisters Fellowship International - Searching for God's Heartbeat Free Daily devotional Web version app.">
+    <meta name="keywords" content="SFGHB, SFI, Sisters fellowship International, Searching for Gods hearbeart">
+    <meta name="author" content="Rev. Mrs. Nches Iredu (S.F.I)">
+    <title>Searching for Gods Heartbeat - Daily Devotional.</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
@@ -206,7 +208,7 @@
                 nav: true,
                 responsive: {
                     0: {
-                        items: 1.4
+                        items: 1.3
                     },
                     600: {
                         items: 1.7

@@ -14,7 +14,7 @@
 
     <div class="card my-card mb-2">
       <div class="card-header">
-        Donations
+        donate
       </div>
       <div class="card-body">
           <p>Give tithe and offering on paystack or paypal</p>
@@ -25,7 +25,7 @@
       <div class="info-section">
         <div class="card my-card mb-2" onclick="location.href='#';">
           <div class="card-header">
-            Today Devotion
+            weekly declarations
           </div>
 
           <div class="card-body d-flex justify-content-between">
@@ -44,7 +44,7 @@
 
         <div class="card my-card mb-2">
           <div class="card-header">
-            Join the Conference
+            join the Conference
           </div>
           <div class="card-body">
               <p>Higher official conference 2021</p>

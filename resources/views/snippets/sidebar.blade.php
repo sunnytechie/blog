@@ -22,7 +22,7 @@
 
   <div class="card my-card mb-2" onclick="location.href='#';">
     <div class="card-header">
-      Bible
+     Weekly declaration
     </div>
     <div class="card-body d-flex justify-content-between">
       {{-- <div class="thumbnail">

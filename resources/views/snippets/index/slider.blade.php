@@ -1,4 +1,4 @@
-<div class="container-fluid my-card slider mb-3">
+<div class="container-fluid my-card-slider slider mb-3">
     <div class="card-header mb-0 pb-0" style="border-bottom: 0">
 
         <div class="d-flex">
@@ -22,15 +22,15 @@
             <div class="owl-carousel owl-theme" style="border: 0">
 
                 <div class="item" style="border: 0">
-                    <div class="card" style="border: 0">
+                    <div class="card shadow">
                         <img src="https://cdn.pixabay.com/photo/2021/11/11/20/49/sauerland-6787215_1280.jpg" alt="" class="card-img-top">
-                        <div class="card-body d-flex align-items-center pt-2 shadow" style="border: 0;">
+                        <div class="card-body d-flex align-items-center pt-2">
                             <div style="margin-right: 12px">
                                 <h5 class="card-title">Card title</h5>
                                 <span>June 4th 2021</span>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div>
+                            <div class="remove-on-phone-view">
                                 <a href="#" class="btn btn-primary btn-devotion">Study</a>
                             </div>
                           </div>
@@ -39,9 +39,9 @@
 
 
                 <div class="item" style="border: 0">
-                    <div class="card" style="border: 0">
+                    <div class="card shadow" style="border: 0">
                         <img src="https://cdn.pixabay.com/photo/2021/11/11/20/49/sauerland-6787215_1280.jpg" alt="" class="card-img-top">
-                        <div class="card-body d-flex align-items-center pt-2" style="border: 0">
+                        <div class="card-body d-flex align-items-center pt-2">
                             <div style="margin-right: 12px">
                                 <h5 class="card-title">Card title</h5>
                                 <span>July 4th 2021</span>
@@ -55,9 +55,9 @@
                 </div>
 
                 <div class="item" style="border: 0">
-                    <div class="card" style="border: 0">
+                    <div class="card shadow" style="border: 0">
                         <img src="https://cdn.pixabay.com/photo/2021/11/11/20/49/sauerland-6787215_1280.jpg" alt="" class="card-img-top">
-                        <div class="card-body d-flex align-items-center pt-2" style="border: 0">
+                        <div class="card-body d-flex align-items-center pt-2">
                             <div style="margin-right: 12px">
                                 <h5 class="card-title">Card title</h5>
                                 <span>July 4th 2021</span>
