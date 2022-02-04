@@ -32,4 +32,12 @@ Route::get('/media/{id}', [App\Http\Controllers\PostController::class, 'showMedi
 Route::get('/devotion/{id}', [App\Http\Controllers\PostController::class, 'showDevotion'])->name('show.devotion');
 
 //Profile
-Route::get('/profiles', [App\Http\Controllers\ProfileController::class, 'index'])->name('index.profile');
+Route::get('/profile/{id}', [App\Http\Controllers\ProfileController::class, 'show'])->name('show.profile');
+Route::get('/profile/{id}/edit', [App\Http\Controllers\ProfileController::class, 'edit'])->name('edit.profile');
+Route::post('/profile/{id}/update', [App\Http\Controllers\ProfileController::class, 'update'])->name('update.profile');
+
+//History
+Route::get('/history', [App\Http\Controllers\HistoryController::class, 'index'])->name('index.history');
+
+//Meetup
+Route::get('/meetup', [App\Http\Controllers\MeetupController::class, 'index'])->name('index.meetup');
