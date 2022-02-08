@@ -1,21 +1,17 @@
 <div class="container-fluid my-card-slider slider mb-3">
-    <div class="card-header mb-0 pb-0" style="border-bottom: 0">
+    <div class="card-header" style="border-bottom: 0; padding-left: 0; padding-top: 20px">
 
         <div class="d-flex">
           <div class="flex-shrink-0">
-            <img height="45" width="45" class="rounded-circle img-fluid border border-3 border-primary" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt="...">
+            <img height="45" width="45" class="rounded-circle img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt="...">
           </div>
           <div class="flex-grow-1 ms-2">
-            <Span style="font-weight: 550">Sisters' Fellowship International</Span> <br>
-            <span style="font-size: 12px; color: rgb(179, 171, 171)">Morning Daily Devotion</span>
+            <span class="card-head-title" style="font-weight: 550">Sisters' Fellowship Int'l.</span> <br>
+            <span style="font-size: 12px; color: rgb(179, 171, 171)">Daily Article</span>
           </div>
         </div>
         {{-- end header flex --}}
-
-        <div class="pt-2">
-          <p>Searching for God's Heartbeat</p>
-        </div>
-      </div>
+    </div>
 
     <div class="row">
         <div class="col-12 m-auto">

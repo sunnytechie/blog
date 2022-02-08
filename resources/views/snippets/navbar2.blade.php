@@ -1,13 +1,13 @@
-<nav class="navbar2 fixed-top" style="background: #242526; color: #fff">
+<nav class="navbar2 fixed-top" style="background: #242526; color: #fff; border-bottom: 0.1rem solid rgb(81, 78, 78)">
     <div class="container">
-        <div class="d-flex justify-content-between" style="padding: 16px 0 8px 0">
-            <div class="nav-brand-mobile">
-              <a href="/" style="color: #ffc">
-                <img height="28" width="28" class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt=""> Sis.Fel.Int'l
+        <div class="d-flex justify-content-between">
+              <a class="navbar-brand" href="/" style="color: #fff">
+                <span>
+                  <img height="32" width="32" class="img-fluid" src="{{ asset('assets/imgs/Untitled_design__8_-removebg-preview.png') }}" alt=""> S.F.G.H.B
+                </span>
               </a>
-            </div>
-            <div class="d-flex">
-                <div style="margin-top: -7px; margin-right: 5px">
+            <div class="d-flex pt-1 pb-2">
+                <div style="margin-right: 5px">
                     <form class="searchbar-2"> 
                         <input type="search" placeholder="Search here" name="search" class="searchbar-input-2" onkeyup="buttonUp2();" required>
                         <span class="searchbar-icon-2">
@@ -15,7 +15,7 @@
                         </span> 
                     </form>
                 </div>
-                <div style="margin-top: -6px">
+                <div>
                         <button style="color: #fff" type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <span><i class="bi bi-person-circle"></i></span>
                         </button>

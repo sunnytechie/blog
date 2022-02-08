@@ -1,4 +1,4 @@
-<nav class="scroll-navbar">
+<nav class="scroll-navbar pt-1 pb-1">
     <div class="container">
       <ul id="mainNav myTab" class="scroll-nav nav nav-tabs d-flex justify-content-center" role="tablist">
         {{-- Navigation Tabs --}}

@@ -2,7 +2,7 @@
     <div class="container">
       <a class="navbar-brand" href="/">
         {{-- <img src="https://www.sfiloveinaction.org/wp-content/uploads/2019/10/cropped-SFI-Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> --}}
-         <span style="color: rgb(255, 255, 255)"> <img height="28" width="28" class="img-fluid" src="{{ asset('assets/imgs/sfi-favicon.png') }}" alt=""> Sisters.FellowShip.Int'l</span>
+         <span style="color: rgb(255, 255, 255)"> <img height="28" width="28" class="img-fluid" src="{{ asset('assets/imgs/Untitled_design__8_-removebg-preview.png') }}" alt=""> S.F.G.H.B</span>
       </a>
       <button style="border: 0 !important" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="bi bi-menu-down"></i></span>
@@ -31,11 +31,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-sort-up-alt"></i> Library</a>
+            <a class="nav-link" href="{{ route('index.history') }}"><i class="bi bi-sort-up-alt"></i> History</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('index.profile') }}"><i class="bi bi-people-fill"></i> SfiMeetUp</a>
+            <a class="nav-link" href="{{ route('index.meetup') }}"><i class="bi bi-people-fill"></i> S.F.I MeetUp</a>
           </li>
 
 

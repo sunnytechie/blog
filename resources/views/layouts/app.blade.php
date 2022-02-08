@@ -16,7 +16,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
 
      <!-- Favicon -->
-     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/sfi-favicon.png') }}">
+     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/Untitled_design__8_-removebg-preview.png') }}">
 
     <!-- Fonts -->
     {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">

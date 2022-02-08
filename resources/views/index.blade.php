@@ -17,52 +17,13 @@
         <div class="tab-content" id="myTabContent">
 
 
-              @if (!Auth::guest() && Auth::user()->user_type == '1')
+        @if (!Auth::guest() && Auth::user()->user_type == '1')
+        
+                  {{-- Upload sniffets available only to administrators --}}
+                  @include('snippets.index.uploads')
+            
+        @endif
 
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="card">
-              <div class="card-header">
-                <h4>Admin Dashboard</h4>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="card">
-                      <div class="card-header">
-                        <h4>Users</h4>
-                      </div>
-                      <div class="card-body">
-                        <h5>Total Users: {{ $users }}</h5>
-                        <h5>Active Users: {{ $active }}</h5>
-                        <h5>Inactive Users: {{ $inactive }}</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card">
-                      <div class="card-header">
-                        <h4>Posts</h4>
-                      </div>
-                      <div class="card-body">
-                        <h5>Total Posts: {{ $posts }}</h5>
-                        <h5>Active Posts: {{ $active_posts }}</h5>
-                        <h5>Inactive Posts: {{ $inactive_posts }}</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {{-- Upload sniffets available only to administrators --}}
-
-          @include('snippets.index.uploads')
-    
-@endif
-
-
-          
         @include('snippets.index.featured')
         
 

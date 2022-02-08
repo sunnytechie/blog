@@ -56,7 +56,7 @@ div {
 
 @media screen and (max-width: 768px) {
   .scroll-navbar{
-    margin-top: 56px !important;
+    margin-top: 50px !important;
   }
 
   .scroll-nav button{
@@ -768,12 +768,12 @@ footer li a.nav-link {
 
  @media (max-width: 426px) {
   .nav-padding-left-on-mobile {
-      padding-left: 350px;
+      padding-left: 400px;
   }}
   
  @media (max-width: 376px) {
   .nav-padding-left-on-mobile {
-      padding-left: 410px;
+      padding-left: 450px;
   }}
 
   .my-card-slider .card {
@@ -796,4 +796,8 @@ footer li a.nav-link {
 
 .btn-link {
   color: #dadada;
+}
+
+.card-head-title {
+  text-transform: capitalize;
 }
