@@ -23,7 +23,8 @@
     </div>
 
       <div class="info-section">
-        <div class="card my-card mb-2" onclick="location.href='#';">
+        @if ($latest_declaration != null)
+        <div class="card my-card mb-2">
           <div class="card-header">
             weekly declarations
           </div>
@@ -31,8 +32,8 @@
           <div class="card-body d-flex justify-content-between">
             <div class="blockqout">
               <blockquote class="blockquote mb-0">
-              <p>A well-known quote, contained in a blockquote element.</p>
-              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              <p>{!! $latest_declaration->body !!}</p>
+              <footer class="blockquote-footer">Rev. Mrs. Nches Iredu <cite title="Source Title">President & Founder S.F.I</cite></footer>
             </blockquote>
             </div>
             <div class="icon-to-the-right">
@@ -40,6 +41,7 @@
             </div>
           </div>
         </div>
+        @endif
 
 
         <div class="card my-card mb-2">

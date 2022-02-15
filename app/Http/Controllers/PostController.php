@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Image;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\History;
 use Session;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
@@ -162,7 +163,19 @@ class PostController extends Controller
         $postPrayer = $post->prayer;
         $postCreatedAt = $post->created_at;
         $postUpdatedAt = $post->updated_at;
-        return view('snippets.index.pages.showpost', compact('post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
+
+        //Latest declaration
+        $latest_declaration = Post::orderBy('created_at', 'desc')
+        ->where('category', 8)
+        ->first();
+
+        //Store Users id and Post Id in History table
+        $user_id = Auth::user()->id;
+        $post_id = $postId;
+        $historyData = array('user_id' => $user_id, 'post_id' => $post_id, 'post_body' => $postBody, 'post_title' => $postTitle, 'post_thumbnail' => $postThumbnail);
+        $saveHistory = History::create($historyData);
+
+        return view('snippets.index.pages.showpost', compact('post', 'latest_declaration', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
     }
 
     //show media
@@ -181,7 +194,19 @@ class PostController extends Controller
         $postPrayer = $post->prayer;
         $postCreatedAt = $post->created_at;
         $postUpdatedAt = $post->updated_at;
-        return view('snippets.index.pages.showmedia', compact('post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
+
+        //Latest declaration
+        $latest_declaration = Post::orderBy('created_at', 'desc')
+        ->where('category', 8)
+        ->first();
+
+        //Store Users id and Post Id in History table
+        $user_id = Auth::user()->id;
+        $post_id = $postId;
+        $historyData = array('user_id' => $user_id, 'post_id' => $post_id, 'post_body' => $postBody, 'post_title' => $postTitle, 'post_thumbnail' => $postThumbnail);
+        $saveHistory = History::create($historyData);
+
+        return view('snippets.index.pages.showmedia', compact('post', 'latest_declaration', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
     }
 
     //show Devotions
@@ -203,8 +228,18 @@ class PostController extends Controller
 
         $date = Carbon::parse($postDisplayDate);
         $read_time = $date->isoFormat('MMMM Do YYYY'); 
+        
+        //Latest declaration
+        $latest_declaration = Post::orderBy('created_at', 'desc')
+        ->where('category', 8)
+        ->first();
 
+        //Store Users id and Post Id in History table
+        $user_id = Auth::user()->id;
+        $post_id = $postId;
+        $historyData = array('user_id' => $user_id, 'post_id' => $post_id, 'post_body' => $postBody, 'post_title' => $postTitle, 'post_thumbnail' => $postThumbnail);
+        $saveHistory = History::create($historyData);
 
-        return view('snippets.index.pages.showdevotion', compact('read_time', 'post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
+        return view('snippets.index.pages.showdevotion', compact('latest_declaration', 'read_time', 'post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
     }
 }

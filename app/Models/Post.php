@@ -9,6 +9,11 @@ class Post extends Model
 {
     use HasFactory;
 
+    public function history()
+    {
+        return $this->belongsTo(History::class);
+    }
+
     protected $fillable = [
         'thumbnail',
         'sound',

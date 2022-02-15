@@ -45,3 +45,6 @@ Route::get('/meetup', [App\Http\Controllers\MeetupController::class, 'index'])->
 
 //Conferences
 Route::get('/conferences', [App\Http\Controllers\ConferencesController::class, 'index'])->name('index.conferences');
+
+//Search
+Route::get('/search', [App\Http\Controllers\SearchController::class, 'search'])->name('search.post');

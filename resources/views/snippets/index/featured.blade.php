@@ -54,7 +54,7 @@
         {{-- After switch the tag bellow is included --}}
               <img class="img-fluid" src="/storage/{{ $post->thumbnail }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">{!! Str::limit($post->body, 350) !!}</p>
+                  <p class="card-text">{!! Str::limit($post->body, 150) !!} Read more</p>
                 </div>
             </div>
         

@@ -51,6 +51,12 @@ class MainController extends Controller
         ->where('category', 6)
         ->paginate(10);
 
-        return view('index', compact('collection', 'posts', 'announcements', 'events', 'videos', 'podcasts', 'transcripts', 'declarations', 'devotions'));
+        //#############Get latest declaration
+
+        $latest_declaration = Post::orderBy('created_at', 'desc')
+        ->where('category', 8)
+        ->first();
+
+        return view('index', compact('collection', 'posts', 'announcements', 'events', 'videos', 'podcasts', 'transcripts', 'declarations', 'devotions', 'latest_declaration'));
     }
 }

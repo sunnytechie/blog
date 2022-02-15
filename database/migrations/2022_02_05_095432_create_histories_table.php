@@ -15,6 +15,11 @@ class CreateHistoriesTable extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('post_id');
+            $table->text('post_body')->nullable();
+            $table->string('post_title')->nullable();
+            $table->string('post_thumbnail')->nullable();
             $table->timestamps();
         });
     }
