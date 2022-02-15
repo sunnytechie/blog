@@ -7,6 +7,14 @@
         </li>
 
         <li class="nav-item" role="presentation">
+          <button class="nav-link" id="devotions-tab" data-bs-toggle="tab" data-bs-target="#devotions" type="button" role="tab" aria-controls="devotions" aria-selected="false"><i class="bi bi-bookmarks"></i> Devotional</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog" type="button" role="tab" aria-controls="blog" aria-selected="false"><i class="bi bi-stickies"></i> Blog</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
           <button class="nav-link" id="announcement-tab" data-bs-toggle="tab" data-bs-target="#announcement" type="button" role="tab" aria-controls="announcement" aria-selected="false"><i class="bi bi-megaphone"></i> Announcement</button>
         </li>
 
@@ -27,16 +35,9 @@
         </li>
 
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="devotions-tab" data-bs-toggle="tab" data-bs-target="#devotions" type="button" role="tab" aria-controls="devotions" aria-selected="false"><i class="bi bi-bookmarks"></i> Devotional</button>
-        </li>
-
-        <li class="nav-item" role="presentation">
           <button class="nav-link" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible" type="button" role="tab" aria-controls="bible" aria-selected="false"><i class="bi bi-book"></i> Declarations</button>
         </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog" type="button" role="tab" aria-controls="blog" aria-selected="false"><i class="bi bi-stickies"></i> Blog</button>
-        </li>
       </ul>
     </div>
 

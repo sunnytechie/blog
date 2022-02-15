@@ -16,7 +16,7 @@
     </div>
     <div class="card-body">
         <p>Kindly Send Your Prayer Request or Testimonies here and we will recieve it.</p>
-        <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Submit here</a>
+        <button class="btn btn-default btn-sidebar w-100 btn-color" data-bs-toggle="modal" data-bs-target="#staticBackdropTestifyPrayer">Send now!</button>
     </div>
   </div>
 

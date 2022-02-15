@@ -201,20 +201,10 @@ class PostController extends Controller
         $postCreatedAt = $post->created_at;
         $postUpdatedAt = $post->updated_at;
 
-        //Find date format
-        $timestamp = strtotime($post->display_date);
-        
+        $date = Carbon::parse($postDisplayDate);
+        $read_time = $date->isoFormat('MMMM Do YYYY'); 
 
-        //Uppercase letters gives day, month in language(Jan, Third, etc)
-        $day = date('D', $timestamp);
 
-        $month = date('M', $timestamp);
-
-        $year = date('Y', $timestamp);
-
-        //use a combination of both, eg: 01 June
-        $final_Date = date('dS', $timestamp) .' '. date('M', $timestamp) .' '. date('Y', $timestamp);
-
-        return view('snippets.index.pages.showdevotion', compact('final_Date', 'post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
+        return view('snippets.index.pages.showdevotion', compact('read_time', 'post', 'postId', 'postTitle', 'postBody', 'postCategory', 'postEventLocation', 'postDisplayDate', 'postThumbnail', 'postUrl', 'postSound', 'postMemoryVerse', 'postPrayer', 'postCreatedAt', 'postUpdatedAt'));
     }
 }

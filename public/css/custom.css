@@ -559,10 +559,42 @@ footer li a.nav-link {
   font-size: small;
 }
 
+/* alert-dismissible */
+.alert-dismissible {
+  position: fixed;
+  top: 200px;
+  right: 50px;
+  width: 500px;
+  border-radius: .25rem;
+  padding: 20px 20px;
+  padding-right: 40px;
+  border: 1px solid #829fc4;
+  z-index: 10;
+  background-color: #3A3B3C;
+  color: rgb(221, 216, 216);
+}
+
+@media screen and (max-width: 426px) {
+  .alert-dismissible {
+    top: 100px;
+    right: 5px;
+    width: auto;
+  }
+}
+  
+}
+
+.alert-dismissible .btn-close {
+  color: rgb(240, 235, 235) !important;
+  transition: all .2s ease-in-out;
+}
+
+
 #staticBackdropPost .modal-content,
 #staticBackdropMedia .modal-content,
 #staticBackdropDevotional .modal-content,
-#staticBackdropQoutes .modal-content {
+#staticBackdropQoutes .modal-content,
+#staticBackdropTestifyPrayer .modal-content {
   background-color: #3A3B3C;
   color: rgb(221, 216, 216);
 }
@@ -570,7 +602,8 @@ footer li a.nav-link {
 #staticBackdropPost input,
 #staticBackdropMedia input,
 #staticBackdropDevotional input,
-#staticBackdropQoutes input {
+#staticBackdropQoutes input,
+#staticBackdropTestifyPrayer input {
   background-color: #242526;
   color: #fff !important;
   border: 1px solid rgb(112, 109, 109);
@@ -579,7 +612,8 @@ footer li a.nav-link {
 #staticBackdropPost textarea,
 #staticBackdropMedia textarea,
 #staticBackdropDevotional textarea,
-#staticBackdropQoutes textarea {
+#staticBackdropQoutes textarea,
+#staticBackdropTestifyPrayer textarea {
   background-color: #242526;
   color: #fff !important;
   border: 1px solid rgb(112, 109, 109);
@@ -588,7 +622,8 @@ footer li a.nav-link {
 #staticBackdropPost select,
 #staticBackdropMedia select,
 #staticBackdropDevotional select,
-#staticBackdropQoutes select {
+#staticBackdropQoutes select, 
+#staticBackdropTestifyPrayer select {
   background-color: #242526;
   color: #fff !important;
   border: 1px solid rgb(112, 109, 109);
@@ -597,7 +632,8 @@ footer li a.nav-link {
 #staticBackdropPost .form-group,
 #staticBackdropMedia .form-group,
 #staticBackdropDevotional .form-group,
-#staticBackdropQoutes .form-group {
+#staticBackdropQoutes .form-group,
+#staticBackdropTestifyPrayer .form-group {
   padding-bottom: 12px;
 }
 
@@ -800,4 +836,21 @@ footer li a.nav-link {
 
 .card-head-title {
   text-transform: capitalize;
+}
+
+@media only screen and (min-width: 700px) {
+  .hide-from-desktop  {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .remove-on-phone-view  {
+    display: none;
+  }
+}
+
+.c-forms-form-body {
+  padding: 20px;
 }

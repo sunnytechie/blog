@@ -7,7 +7,7 @@ use App\Http\Requests;
 use App\Models\User;
 use App\Models\Post;
 use Session;
-use Carbon\Carbon;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller

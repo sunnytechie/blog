@@ -16,55 +16,35 @@
     <div class="row">
         <div class="col-12 m-auto">
             <div class="owl-carousel owl-theme" style="border: 0">
+                @foreach ($devotions as $devotion)
 
-                <div class="item" style="border: 0">
-                    <div class="card shadow">
-                        <img src="https://cdn.pixabay.com/photo/2021/11/11/20/49/sauerland-6787215_1280.jpg" alt="" class="card-img-top">
-                        <div class="card-body d-flex align-items-center pt-2">
-                            <div style="margin-right: 12px">
-                                <h5 class="card-title">Card title</h5>
-                                <span>June 4th 2021</span>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="item" style="border: 0">
+                        <a href="{{ route('show.devotion', $devotion->id) }}">
+                        <div class="card shadow">
+                            <img src="/storage/{{ $devotion->thumbnail }}" alt="" class="card-img-top">
+                            <div class="card-body d-flex align-items-center pt-2">
+                                <div style="margin-right: 12px">
+                                    <h5 class="card-title"  style="text-transform: capitalize">{{ $devotion->title }}</h5>
+                                    @php
+                                        $date = Carbon::parse($devotion->display_date);
+                                        $read_time = $date->isoFormat('MMMM Do YYYY'); 
+                                    @endphp
+                                    <span style="font-size: 12px; color: rgb(179, 171, 171); text-transform: capitalize">
+                                        {{ $read_time }}
+                                    </span>
+
+                                    <span class="card-text" style="text-transform: capitalize">{!! Str::limit($devotion->memory_verse, 80) !!}</span>
+                                </div>
+                                <div class="remove-on-phone-view">
+                                    <a href="/devotion/{{ $devotion->id }}" class="btn btn-primary btn-devotion">read.</a>
+                                </div>
                             </div>
-                            <div class="remove-on-phone-view">
-                                <a href="#" class="btn btn-primary btn-devotion">Study</a>
-                            </div>
-                          </div>
+                        </div>
+                        </a>
                     </div>
-                </div>
 
-
-                <div class="item" style="border: 0">
-                    <div class="card shadow" style="border: 0">
-                        <img src="https://cdn.pixabay.com/photo/2021/11/11/20/49/sauerland-6787215_1280.jpg" alt="" class="card-img-top">
-                        <div class="card-body d-flex align-items-center pt-2">
-                            <div style="margin-right: 12px">
-                                <h5 class="card-title">Card title</h5>
-                                <span>July 4th 2021</span>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div>
-                                <a href="#" class="btn btn-primary btn-devotion">Study</a>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="item" style="border: 0">
-                    <div class="card shadow" style="border: 0">
-                        <img src="https://cdn.pixabay.com/photo/2021/11/11/20/49/sauerland-6787215_1280.jpg" alt="" class="card-img-top">
-                        <div class="card-body d-flex align-items-center pt-2">
-                            <div style="margin-right: 12px">
-                                <h5 class="card-title">Card title</h5>
-                                <span>July 4th 2021</span>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div>
-                                <a href="#" class="btn btn-primary btn-devotion">Study</a>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+                @endforeach
+                
 
             </div>
         </div>

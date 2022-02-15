@@ -24,6 +24,7 @@ Route::post('/post/store', [App\Http\Controllers\PostController::class, 'storePo
 Route::post('/media/store', [App\Http\Controllers\PostController::class, 'storeMedia'])->name('store.media');
 Route::post('/quote/store', [App\Http\Controllers\PostController::class, 'storeQuote'])->name('store.quote');
 Route::post('/devotion/store', [App\Http\Controllers\PostController::class, 'storeDevotion'])->name('store.devotion');
+Route::post('/testifyprayer/store', [App\Http\Controllers\TestifyPrayerController::class, 'storeTestifyPrayer'])->name('store.testifyprayer');
 });
 
 //dispalying posts
@@ -41,3 +42,6 @@ Route::get('/history', [App\Http\Controllers\HistoryController::class, 'index'])
 
 //Meetup
 Route::get('/meetup', [App\Http\Controllers\MeetupController::class, 'index'])->name('index.meetup');
+
+//Conferences
+Route::get('/conferences', [App\Http\Controllers\ConferencesController::class, 'index'])->name('index.conferences');

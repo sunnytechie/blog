@@ -9,11 +9,8 @@
 
     <div class="row">
 
-    <div class="col-lg-3">
-      @include('snippets.leftsidebar')
-    </div>
       {{-- Main --}}
-      <div class="col-lg-6 include-snippets">
+      <div class="col-lg-7 offset-md-1 include-snippets">
         <div class="tab-content" id="myTabContent">
 
             {{-- show Devotion --}}

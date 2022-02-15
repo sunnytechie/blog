@@ -3,7 +3,7 @@
     @include('snippets.index.slides.devotion')
     {{-- Devotional Slider section --}}
 
-    {{-- Hide below slide from desktop view --}}
+  <div class="hide-from-desktop">
     {{-- Post section --}}
     @include('snippets.index.slides.post')
     {{-- Post section --}}
@@ -11,8 +11,8 @@
     {{-- book section --}}
     @include('snippets.index.slides.book')
     {{-- book section --}}
-    {{-- Post section --}}
-    {{-- Post section --}}
+  </div>
+
 
   @foreach ($collection as $post)
   <div class="card my-card mb-3">
