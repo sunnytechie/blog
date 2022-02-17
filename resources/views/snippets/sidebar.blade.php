@@ -12,7 +12,7 @@
 
   <div class="card my-card mb-2">
     <div class="card-header">
-      Prayer/Testimony
+      Prayer Request & Testimony
     </div>
     <div class="card-body">
         <p>Kindly Send Your Prayer Request or Testimonies here and we will recieve it.</p>

@@ -15,9 +15,11 @@ class SearchController extends Controller
         ->first();
 
         $search = $request->get('search');
+
         $searches = Post::where('title', 'like', '%' . $search . '%')
         ->orWhere('body', 'like', '%' . $search . '%')
-        ->paginate(20);        
+        ->paginate(20);    
+        
 
         return view('search.index', compact('searches', 'latest_declaration'));
     }
