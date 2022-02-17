@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link btn btn-profile" href="#" style="font-weight: bold">Join us</a>
+                <a class="nav-link btn btn-profile" href="https://www.sfiloveinaction.org" style="font-family: 'Bebas Neue', cursive;">S.F.I Official</a>
             </li>
             </ul>
 
@@ -20,8 +20,8 @@
           <li class="nav-item">
 
             <div class="navbar-right-search">
-              <form class="searchbar">
-                <input type="search" placeholder="Search here" name="search" class="searchbar-input" onkeyup="buttonUp();" required>
+              <form class="searchbar" action="{{ route('search.post') }}"  method="GET" role="search">
+                <input type="search" placeholder="Search here" name="search" class="searchbar-input" onkeyup="buttonUp();">
                 <span class="searchbar-icon">
                   <i class="bi bi-search"></i>
                 </span>
@@ -43,7 +43,11 @@
           @guest
           @if (Route::has('login'))
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}"><i class="bi bi-box-arrow-left"></i> Login</a>
+            <a class="nav-link btn btn-login" href="{{ route('login') }}"><i class="bi bi-person-circle"></i> Sign In</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn btn-login" href="{{ route('register') }}"><i class="bi bi-box-arrow-in-right"></i> Register</a>
           </li>
           @endif
 

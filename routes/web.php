@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+//Search
+Route::get('/search', [App\Http\Controllers\SearchController::class, 'search'])->name('search.post');
+
 Route::get('/home', [App\Http\Controllers\MainController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\MainController::class, 'index'])->name('index.post');
 
@@ -45,6 +48,3 @@ Route::get('/meetup', [App\Http\Controllers\MeetupController::class, 'index'])->
 
 //Conferences
 Route::get('/conferences', [App\Http\Controllers\ConferencesController::class, 'index'])->name('index.conferences');
-
-//Search
-Route::get('/search', [App\Http\Controllers\SearchController::class, 'search'])->name('search.post');

@@ -3,14 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
+use App\Models\User;
 
 class SearchController extends Controller
 {
     public function search(Request $request) {
-        $search = $request->get('search');
-        $posts = Post::where('title', 'like', '%' . $search . '%');
+        //Latest declaration
+        $latest_declaration = Post::orderBy('created_at', 'desc')
+        ->where('category', 8)
+        ->first();
 
-        $searches = $posts->paginate(20);
-        return view('search.index', compact('searches'));
+        $search = $request->get('search');
+        $searches = Post::where('title', 'like', '%' . $search . '%')
+        ->orWhere('body', 'like', '%' . $search . '%')
+        ->paginate(20);        
+
+        return view('search.index', compact('searches', 'latest_declaration'));
     }
 }

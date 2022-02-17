@@ -49,6 +49,9 @@
         
 
         @include('snippets.index.blog')
+
+        {{-- Testimonials and prayer request modal.. Note that the click button is on the sidebar --}}
+        @include('snippets.index.upload.testifyprayer')
         
         </div>
       </div>

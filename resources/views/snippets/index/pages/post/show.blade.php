@@ -30,6 +30,8 @@
         
       </div>
   
+      {{-- Testimonials and prayer request modal.. Note that the click button is on the sidebar --}}
+      @include('snippets.index.upload.testifyprayer')
   
   
     </section>

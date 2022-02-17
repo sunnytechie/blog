@@ -8,8 +8,8 @@
               </a>
             <div class="d-flex pt-1 pb-2">
                 <div style="margin-right: 5px">
-                    <form class="searchbar-2"> 
-                        <input type="search" placeholder="Search here" name="search" class="searchbar-input-2" onkeyup="buttonUp2();" required>
+                    <form class="searchbar-2" action="{{ route('search.post') }}"  method="GET" role="search"> 
+                        <input type="search" placeholder="Search here" name="search" class="searchbar-input-2" onkeyup="buttonUp2();">
                         <span class="searchbar-icon-2">
                           <i class="bi bi-search"></i>
                         </span> 

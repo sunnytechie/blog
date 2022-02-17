@@ -792,6 +792,13 @@ footer li a.nav-link {
     color: #dadada;
  }
 
+ .btn-login {
+  background: #3A3B3C;
+  border-radius: 20px;
+  padding: 5px 20px !important;
+  margin-left: 8px;
+ }
+
  .btn-profile {
      background: #3A3B3C;
      border-radius: 20px;
@@ -827,7 +834,7 @@ footer li a.nav-link {
 
 .card-header {
   font-weight: 500;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 
 .btn-link {

@@ -1,6 +1,6 @@
 <section class="sidebar">
 
-  <div class="card my-card mb-2">
+  {{-- <div class="card my-card mb-2">
     <div class="card-header">
       Business Profile
     </div>
@@ -8,7 +8,7 @@
         <p>Build a personal Business account with other Sisters' in the ministry.</p>
         <a href="#" class="btn btn-default btn-sidebar w-100 btn-color">Let Build</a>
     </div>
-  </div>
+  </div> --}}
 
   <div class="card my-card mb-2">
     <div class="card-header">
