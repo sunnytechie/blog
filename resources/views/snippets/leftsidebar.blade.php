@@ -1,11 +1,11 @@
 <section>
     <div class="card my-card mb-2">
-      <a target="_blank" href="#">
+      <a target="_blank" href="https://www.youtube.com/channel/UCeQpaXDTFJ12NJKjpIJAgyg">
         <div style="cursor: pointer">
 
         <button class="btn btn-default w-100" type="button" style="color: #ddd">
             <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-            Happening Live...
+            Happening Now...
         </button>
 
       </div>

@@ -52,10 +52,16 @@
           @endif
 
           @else
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link btn-login" href="{{ route('show.profile', Auth::user()->id) }}"><i class="bi bi-person-circle"></i> <span class="font-weight-bold">{{ Auth::user()->name }}</span></a>
+          </li>
+          
+          {{-- <li class="nav-item dropdown">
+            
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                 <i class="bi bi-person-circle"></i> <span class="font-weight-bold">{{ Auth::user()->name }}</span>
             </a>
+
             <ul class="dropdown-menu dropdown-menu-2" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-person"></i></span> Profile</a></li>
               <li><a class="dropdown-item" style="padding: 10px 20px;" href="#"><span style="margin-right: 6px"><i class="bi bi-telephone"></i></span> Contact us</a></li>
@@ -78,7 +84,8 @@
                 @csrf
             </form>
             </ul>
-          </li>
+          </li> --}}
+          
           @endguest
 
           {{-- @guest

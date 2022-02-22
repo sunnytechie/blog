@@ -581,8 +581,6 @@ footer li a.nav-link {
     width: auto;
   }
 }
-  
-}
 
 .alert-dismissible .btn-close {
   color: rgb(240, 235, 235) !important;
@@ -797,12 +795,13 @@ footer li a.nav-link {
   border-radius: 20px;
   padding: 5px 20px !important;
   margin-left: 8px;
+  margin-top: 3px;
  }
 
  .btn-profile {
      background: #3A3B3C;
      border-radius: 20px;
-     padding: 5px 30px !important;
+     padding: 5px 20px !important;
  }
   @media (max-width: 768px) {
     .nav-padding-left-on-mobile {
