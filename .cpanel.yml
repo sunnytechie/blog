@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/sfilrmip/sfghb.sfiloveinaction.org/
-    - /bin/cp * $DEPLOYPATH
